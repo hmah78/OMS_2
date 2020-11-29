@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Dashboard</title>
+	<link rel="stylesheet" href="styling/addStudent-style.css"> 
+</head>
+<body>
+	<header>
+
+		<div class="lefttop">
+			<img src="styling/icons/oms-white.png" class="omsimg">
+		</div>
+		<div class="rightop">
+			<a href="#" class="logoutoption">
+				Logout
+			</a>
+		</div>
+	</header>
+
+	<div class="menu">
+		
+		<a href="addStudent.html"><img src="styling/icons/045-monitor.png" class="menuicons">Add Student</a>
+		<a href="approve_application.php"><img src="styling/icons/approve.png" class="menuicons"><span>Approve Applications</span></a>
+		<a href="createEvent.html"><img src="styling/icons/036-calendar.png" class="menuicons"><span>Add Event</span></a>
+	</div>
+
+
+	<div class = "studentform">
+		<h1 class= "formtitle">Student Admission Form</h1>
+		<form action = "addStudent.php" method="POST">
+
+			<div class="studentdata">
+				<label><strong>First Name</strong></label>
+				<input type="text" name="firstName" placeholder="John">
+
+				<label><strong>Last Name</strong></label>
+				<input type="text" name="lastName" placeholder="Doe">
+
+				<label><strong>Date of Birth</strong></label>
+				<input type="date" name="dob" placeholder="mm-dd-yyyy">
+
+				<label><strong>Gender</strong></label>
+				<input type="text" name="gender" placeholder="female"> 
+
+				<label><strong>CNIC/B-form No.</strong></label>
+				<input type="text" name="CNIC" placeholder="XXXXX-XXXXXX-X">
+
+				<label><strong>Place of Birth</strong></label>
+				<input type="text" name="pob" placeholder="Islamabad, Pakistan">
+
+
+			</div >
+				<input type="submit" name="" value="Add Student">
+			</div>
+		</form>
+	</div>
+	
+	<div>
+		
+
+
+	</div>
+
+</body>
+</html>
